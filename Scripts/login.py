@@ -14,7 +14,7 @@ file = open("loginInfo.txt", 'r')
 username = str(file.readline())
 password = str(file.readline())
 print(username)
-createDict(username[0:5], password)
+createDict(username[0:-1], password)
 print(d)
 
 
@@ -72,6 +72,7 @@ def menu():
     print("A: Set up Items")
     print("B: Change amount of Items")
     print("C: Check on Items")
+    print("D: Exit Program")
     x = input("What would you like to do?: ")
     if x.lower() == 'a':
         setUp()
@@ -79,6 +80,9 @@ def menu():
         changeItems()
     elif x.lower() == 'c':
         checkItems()
+    elif x.lower() == 'd'
+        print("Have a nice day!")
+        exit()
     else:
         print("Please enter 'a', 'b', or 'c'")
         menu()
