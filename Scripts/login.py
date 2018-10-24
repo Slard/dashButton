@@ -11,10 +11,11 @@ def createDict(x, y):
 
 
 file = open("loginInfo.txt", 'r')
-username = file.readline()
-password = file.readline()
+username = str(file.readline())
+password = str(file.readline())
 print(username)
-createDict(username, password)
+createDict(username[0:5], password)
+print(d)
 
 
 def main():
