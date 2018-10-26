@@ -80,7 +80,7 @@ def menu():
         changeItems()
     elif x.lower() == 'c':
         checkItems()
-    elif x.lower() == 'd'
+    elif x.lower() == 'd':
         print("Have a nice day!")
         exit()
     else:
