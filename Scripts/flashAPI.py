@@ -35,4 +35,5 @@ from amazon.api import AmazonAPI
 >>> cleared_cart = amazon.cart_clear(cart.cart_id, cart.hmac)
 '''
 import bottlenose
-amazon = bottlenose.Amazon("AKIAJXA5GIJNO3U2A65", "aDQYVdQ7ZMCBA2m40XoFYcOg+bz9Yrz2edNgIe8c","needthisforsc-20")
+amazon = bottlenose.Amazon("AKIAJXA5GIJNO3U2A65A", "aDQYVdQ7ZMCBA2m40XoFYcOg+bz9Yrz2edNgle8c","needthisforsc-20")
+response = amazon.ItemLookup(ItemId="1449372422", ResponseGroup="Images")
