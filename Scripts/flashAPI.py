@@ -34,9 +34,5 @@ from amazon.api import AmazonAPI
 >>> modified_cart = amazon.cart_modify(item, cart.cart_id, cart.hmac)
 >>> cleared_cart = amazon.cart_clear(cart.cart_id, cart.hmac)
 '''
-from C:\Users\Slade\Downloads\python-amazon-simple-product-api-2.2.11\amazon\api.py import AmazonAPI
-
-amazon = AmazonAPI(AKIAJXA5GIJNO3U2A65, aDQYVdQ7ZMCBA2m40XoFYcOg+bz9Yrz2edNgIe8c)
-product = amazon.lookup(ItemId="B0016J8AOC")
-
-print(product.title())
+import bottlenose
+amazon = bottlenose.Amazon("AKIAJXA5GIJNO3U2A65", "aDQYVdQ7ZMCBA2m40XoFYcOg+bz9Yrz2edNgIe8c","needthisforsc-20")
