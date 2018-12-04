@@ -35,5 +35,13 @@ from amazon.api import AmazonAPI
 >>> cleared_cart = amazon.cart_clear(cart.cart_id, cart.hmac)
 '''
 import bottlenose
-amazon = bottlenose.Amazon("AKIAJXA5GIJNO3U2A65A", "aDQYVdQ7ZMCBA2m40XoFYcOg+bz9Yrz2edNgle8c","needthisforsc-20")
-response = amazon.ItemLookup(ItemId="1449372422", ResponseGroup="Images")
+
+
+AWS_ACCESS_KEY = "AKIAINSEOA6HXFZCBD4Q"
+AWS_SECRET_KEY = "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"
+AWS_ASSOC_TAG = "needthisforsc-20"
+amazon = bottlenose.Amazon(AWS_ACCESS_KEY, AWS_SECRET_KEY, AWS_ASSOC_TAG, Region='US')
+response = amazon.ItemSearch(Keywords="Kindle 3G", SearchIndex="All")
+
+
+print(response)
