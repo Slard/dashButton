@@ -35,10 +35,10 @@ class main:
         result = c.fetchall()
         if result:
             self.logf.pack_forget()
-            self.head['text'] = self.username.get() + '\n Loged In'
+            self.head['text'] = self.username.get() + '\n Logged In'
             self.head['pady'] = 150
         else:
-            ms.showerror('Oops!','Username Not Found.')
+            ms.showerror('Oops!','Username/Password Not Found.')
             
     def new_user(self):
     	#Establish Connection
