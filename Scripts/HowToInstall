@@ -1,0 +1,16 @@
+Hi, thank you for using Flash (WIP)!
+
+This is how to install Bottlenose:
+
+1)Go to this link https://github.com/lionheart/bottlenose/blob/master/README.md
+2)Download the files
+3)Enter py install bottlenose into your commandline
+
+This is how to install python-amazon-simple-product-api
+
+1)Go to this link https://pypi.org/project/python-amazon-simple-product-api/#description
+2)Download the files
+3)Enter py install lxml into your commandline
+4)Enter py install python-dateutil into your commandline
+
+By Slade Wiltshire and Michael N
